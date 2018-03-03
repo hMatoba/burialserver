@@ -1,0 +1,5 @@
+build:
+  docker build -t burial .
+
+run on PowerShell:
+  docker run -d -p 8080:8080 --env CONOHA_MONGO=$env:CONOHA_MONGO  burial
